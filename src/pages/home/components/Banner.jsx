@@ -6,7 +6,7 @@ const Banner = () => {
     return (
         <section id="banner" className='w-11/12 md:container lg:w-9/12 mx-auto grid place-items-center md:grid-cols-2 pt-14 md:pt-24 gap-6'>
             <img src={img} alt="mahmud" className="place-self-center md:place-self-end md:col-start-2 md:row-start-1 w-9/12 sm:w-7/12 md:w-full" />
-            <div className="text-white space-y-4 md:col-start-1 md:row-start-1 mb-8 md:mb-0 text-center md:text-left">
+            <div className="space-y-4 md:col-start-1 md:row-start-1 mb-8 md:mb-0 text-center md:text-left">
                 <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold">
                     Hi, I'm <span className="text-accent">
                         <Typewriter
