@@ -10,7 +10,7 @@ import express from "../../../assets/icons/express.png"
 
 const Skills = () => {
     return (
-        <section id='skills' className='w-11/12 md:container mx-auto py-14 md:py-24'>
+        <section id='skills' className='w-11/12 md:container lg:w-9/12 mx-auto py-14 md:py-24'>
             <div>
                 <div className="space-y-4 w-full md:w-9/12 text-center mx-auto">
                     <h2 className="text-2xl md:text-3xl lg:text-4xl text-center">My <span className="text-accent">Skills</span></h2>
