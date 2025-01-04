@@ -1,48 +1,96 @@
 import { useState } from "react"
 import { CiMenuFries } from "react-icons/ci"
 import { IoMdClose } from "react-icons/io"
-import { Link } from "react-router-dom"
 import { motion } from "motion/react"
+import { Link } from "react-scroll"
 
 const Header = () => {
     const [navOpen, setNavOpen] = useState(false)
     const navItems = (
         <>
             <li className="flex justify-between">
-                <a href='#'>Home</a>
-                <IoMdClose onClick={() => { setNavOpen(false) }} className="block lg:hidden cursor-pointer" />
+                <Link
+                    to="banner"
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    activeClass="active"
+                    className="cursor-pointer"
+                >
+                    Home
+                </Link>
+                <IoMdClose
+                    onClick={() => setNavOpen(false)}
+                    className="block lg:hidden cursor-pointer text-xl"
+                />
             </li>
             <li>
-                <a href='#'>About</a>
+                <Link
+                    to="about"
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    activeClass="active"
+                    className="cursor-pointer"
+                >
+                    About
+                </Link>
             </li>
             <li>
-                <a href='#'>Skills</a>
+                <Link
+                    to="skills"
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    activeClass="active"
+                    className="cursor-pointer"
+                >
+                    Skills
+                </Link>
             </li>
             <li>
-                <a href='#'>Projects</a>
+                <Link
+                    to="projects"
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    activeClass="active"
+                    className="cursor-pointer"
+                >
+                    Projects
+                </Link>
             </li>
             <li>
-                <a href='#'>Contact</a>
+                <Link
+                    to="contact"
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    activeClass="active"
+                    className="cursor-pointer"
+                >
+                    Contact
+                </Link>
             </li>
         </>
     )
     return (
-        <header className="z-50 fixed left-0 right-0 bg-[#151515]/50">
-            <div className="w-11/12 md:container mx-auto flex justify-between items-center py-2 text-white">
+        <header className="z-50 fixed left-0 right-0 bg-[#151515]/50 drop-shadow-sm">
+            <div className="w-11/12 md:container lg:w-9/12 mx-auto flex justify-between items-center py-3 text-white">
                 <Link to='/'>
                     <h4 className="font-black md:text-2xl">Mahmud</h4>
                 </Link>
-                <nav>
-                    <motion.ul className={`uppercase flex flex-col lg:flex-row lg:items-center gap-6 font-extrabols fixed lg:static top-0  w-56 h-screen lg:h-auto lg:w-auto p-8 bg-[#151515]/90 lg:bg-transparent`}
+                <nav className="nav">
+                    <motion.ul className={`uppercase flex flex-col lg:flex-row lg:items-center gap-6 font-extrabols fixed lg:static top-0  w-56 h-screen lg:h-auto lg:w-auto p-8 md:p-4 bg-[#151515]/90 lg:bg-transparent text-sm font-medium`}
                         initial={{ right: '-14rem' }}
                         animate={{ right: navOpen ? '0' : '-14rem' }}
                         transition={{ type: "spring", stiffness: 100, damping: 20 }}
                     >
                         {navItems}
-                        <button>Download Resume</button>
+                        <button className="color-accent py-3 px-2 md:px-5 rounded-md">Download Resume</button>
                     </motion.ul>
                     <div>
-                        <CiMenuFries onClick={() => { setNavOpen(true) }} className="block lg:hidden" />
+                        <CiMenuFries onClick={() => { setNavOpen(true) }} className="block lg:hidden cursor-pointer text-xl" />
                     </div>
                 </nav>
             </div>
