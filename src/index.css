@@ -12,6 +12,9 @@ body {
 .color-accent {
   background-color: #9615db;
 }
+.text-accent {
+  color: #9615db;
+}
 
 .nav ul li a {
   position: relative;
