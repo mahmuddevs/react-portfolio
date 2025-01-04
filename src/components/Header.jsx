@@ -87,7 +87,7 @@ const Header = () => {
                         transition={{ type: "spring", stiffness: 100, damping: 20 }}
                     >
                         {navItems}
-                        <button className="color-accent py-3 px-2 md:px-5 rounded-md">Download Resume</button>
+                        <button className="color-accent py-3 px-2 md:px-5 rounded-md hover:bg-[#9615db]/60">Download Resume</button>
                     </motion.ul>
                     <div>
                         <CiMenuFries onClick={() => { setNavOpen(true) }} className="block lg:hidden cursor-pointer text-xl" />

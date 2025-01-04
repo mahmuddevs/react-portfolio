@@ -1,0 +1,47 @@
+[
+    {
+        "id": "1",
+        "name": "Gadget Heaven",
+        "description": "A dynamic e-commerce platform for gadgets with features like product search, filtering, and cart management.",
+        "technologies": [
+            "React",
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "Tailwind CSS"
+        ],
+        "image": "https://example.com/gadget-heaven-thumbnail.jpg",
+        "live_demo_link": "https://gadgetheaven.com",
+        "github_link": "https://github.com/username/gadget-heaven"
+    },
+    {
+        "id": "2",
+        "name": "Gadget Heaven",
+        "description": "A dynamic e-commerce platform for gadgets with features like product search, filtering, and cart management.",
+        "technologies": [
+            "React",
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "Tailwind CSS"
+        ],
+        "image": "https://example.com/gadget-heaven-thumbnail.jpg",
+        "live_demo_link": "https://gadgetheaven.com",
+        "github_link": "https://github.com/username/gadget-heaven"
+    },
+    {
+        "id": "3",
+        "name": "Gadget Heaven",
+        "description": "A dynamic e-commerce platform for gadgets with features like product search, filtering, and cart management.",
+        "technologies": [
+            "React",
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "Tailwind CSS"
+        ],
+        "image": "https://example.com/gadget-heaven-thumbnail.jpg",
+        "live_demo_link": "https://gadgetheaven.com",
+        "github_link": "https://github.com/username/gadget-heaven"
+    }
+]

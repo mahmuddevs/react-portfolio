@@ -26,7 +26,7 @@ const Banner = () => {
                     <a href="https://github.com/mahmuddevs" className="border p-2 rounded-full hover:-translate-y-1 duration-300 transition-transform"><FaGithub /></a>
                     <a href="https://www.linkedin.com/in/themahmudrashid/" className="border p-2 rounded-full hover:-translate-y-1 duration-300 transition-transform"><FaLinkedin /></a>
                 </div>
-                <button className="color-accent py-3 px-2 md:px-5 rounded-md flex mx-auto md:mx-0">Download Resume</button>
+                <button className="color-accent py-3 px-2 md:px-5 rounded-md flex mx-auto md:mx-0 hover:bg-[#9615db]/60">Download Resume</button>
             </div>
         </section>
     )
