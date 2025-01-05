@@ -17,6 +17,11 @@
             "FireBase Auth"
         ],
         "image": "/images/project/readsphere.png",
+        "projectImages": [
+            "/images/project/readsphere/1.png",
+            "/images/project/readsphere/2.png",
+            "/images/project/readsphere/3.png"
+        ],
         "live_link": "https://readsphere-by-mahmud.netlify.app/",
         "client_git": "https://github.com/mahmuddevs/ReadSphere-Library-Client",
         "server_git": "https://github.com/mahmuddevs/ReadSphere-Library-Server"
@@ -40,6 +45,11 @@
             "FireBase Auth"
         ],
         "image": "/images/project/visanavigator.png",
+        "projectImages": [
+            "/images/project/visanavigator/1.png",
+            "/images/project/visanavigator/2.png",
+            "/images/project/visanavigator/3.png"
+        ],
         "live_link": "https://visa-navigator-by-mahmud.netlify.app/",
         "client_git": "https://github.com/mahmuddevs/visa-navigator-client",
         "server_git": "https://github.com/mahmuddevs/visa-navigator-server"
@@ -55,6 +65,11 @@
             "JavaScript"
         ],
         "image": "/images/project/petadopt.png",
+        "projectImages": [
+            "/images/project/petadopt/1.png",
+            "/images/project/petadopt/2.png",
+            "/images/project/petadopt/3.png"
+        ],
         "live_link": "https://peddy-adoption-by-mahmud.netlify.app/",
         "client_git": "https://github.com/mahmuddevs/peddy-pet-adoption"
     }

@@ -7,7 +7,7 @@ const Details = () => {
     const [project, setProject] = useState([])
     const [selectedImage, setSelectedImage] = useState(null)
 
-    const { name, short_description, description, drawbacks, technologies, image, live_link, client_git, server_git } = project
+    const { name, short_description, description, drawbacks, technologies, projectImages, live_link, client_git, server_git } = project
 
     useEffect(() => {
         fetch('/projects.json')
@@ -21,27 +21,17 @@ const Details = () => {
             });
     }, []);
 
-    const projectImages = [
-        '/placeholder.svg?height=400&width=600',
-        '/placeholder.svg?height=400&width=600',
-        '/placeholder.svg?height=400&width=600',
-        '/placeholder.svg?height=400&width=600',
-        '/placeholder.svg?height=400&width=600',
-        '/placeholder.svg?height=400&width=600',
-    ]
-
-    console.log(project)
-
     return (
         <>
 
             <div className="min-h-scree py-14 md:py-24">
                 <main>
                     <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-                        <div className="px-4 py-6 sm:px-0 ">
-                            <div className="bg-[#313436] drop-shadow-lg overflow-hidden sm:rounded-lg">
-                                <div className="px-4 py-5 sm:px-6">
-                                    <h2 className="text-2xl font-semibold text-white">Project Overview</h2>
+                        <div className="px-4 py-6 sm:px-0">
+                            <div className="bg-[#313436] drop-shadow-lg overflow-hidden sm:rounded-lg pb-14">
+                                <div className="px-4 py-5 sm:px-6 space-y-4">
+                                    <h2 className="my-8 text-2xl md:text-3xl lg:text-4xl text-center">Project <span className="text-accent">Overview</span></h2>
+                                    <h4 className="text-xl font-semibold">Name: {name}</h4>
                                     <p className="mt-1 max-w-2xl text-sm text-gray-200">{short_description}</p>
                                 </div>
                                 <div className="border-t border-gray-200 px-4 py-5 sm:px-6">
@@ -95,10 +85,10 @@ const Details = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="mt-8 bg-[#313436] drop-shadow-lg rounded-lg px-4 py-5 sm:px-6">
-                            <h2 className="text-2xl font-semibold text-white mb-4">Project Gallery</h2>
+                        <div className="mt-8 bg-[#313436] drop-shadow-lg rounded-lg px-4 py-5 sm:px-6 pb-14">
+                            <h2 className="my-8 text-2xl md:text-3xl lg:text-4xl text-center">Project <span className="text-accent">Gallary</span></h2>
                             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                                {projectImages.map((src, index) => (
+                                {projectImages?.map((src, index) => (
                                     <div key={index} className="bg-gray-200 rounded-lg overflow-hidden cursor-pointer">
                                         <img
                                             src={src}
