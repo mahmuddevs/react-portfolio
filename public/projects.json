@@ -1,47 +1,61 @@
 [
     {
         "id": "1",
-        "name": "Gadget Heaven",
-        "description": "A dynamic e-commerce platform for gadgets with features like product search, filtering, and cart management.",
+        "name": "Read Sphere Library Management",
+        "short_description": "ReadSphere is a library management system that allows users to manage books, borrow and return them, and toggle between card and table views for better accessibility.",
+        "description": "ReadSphere is a comprehensive library management system designed to simplify book management and borrowing. Users can add, update, and delete books, borrow books, and sort them by availability. The platform features a card view and table view toggle, providing flexibility in how information is displayed. Borrowed books are managed in a dedicated section, allowing users to see their borrowed books and return them with a single click. The return process updates the overall book quantity dynamically. Security is ensured on the server side through JWT verification, safeguarding private pages and ensuring secure access.",
+        "drawbacks": [
+            "The system lacks a dashboard to provide an overview of important statistics and activities.",
+            "Users are not separated by roles, limiting administrative functionalities and control."
+        ],
         "technologies": [
+            "Tailwind CSS",
             "React",
             "Node.js",
             "Express",
             "MongoDB",
-            "Tailwind CSS"
+            "FireBase Auth"
         ],
-        "image": "https://example.com/gadget-heaven-thumbnail.jpg",
-        "live_demo_link": "https://gadgetheaven.com",
-        "github_link": "https://github.com/username/gadget-heaven"
+        "image": "/images/project/readsphere.png",
+        "live_link": "https://readsphere-by-mahmud.netlify.app/",
+        "client_git": "https://github.com/mahmuddevs/ReadSphere-Library-Client",
+        "server_git": "https://github.com/mahmuddevs/ReadSphere-Library-Server"
     },
     {
         "id": "2",
-        "name": "Gadget Heaven",
-        "description": "A dynamic e-commerce platform for gadgets with features like product search, filtering, and cart management.",
+        "name": "Visa Navigator",
+        "short_description": "Visa Navigator is a platform to manage and apply for various types of visas, featuring light/dark theme toggle and application tracking.",
+        "description": "Visa Navigator is a user-friendly platform that simplifies visa management and application processes. Users can add, edit, and delete different types of visas, apply for visas, and track their applications through the \"My Visa Application\" page. A light and dark theme toggle enhances usability, while filtering mechanisms help minimize duplicate visa applications. The system is designed to streamline the visa process for all users, making it accessible and intuitive.",
+        "drawbacks": [
+            "JWT authentication is not implemented, leaving the platform less secure.",
+            "User roles are not assigned, allowing unrestricted access to administrative functionalities.",
+            "Anyone can add visas and apply for them, reducing control and reliability."
+        ],
         "technologies": [
+            "Tailwind CSS",
             "React",
             "Node.js",
             "Express",
             "MongoDB",
-            "Tailwind CSS"
+            "FireBase Auth"
         ],
-        "image": "https://example.com/gadget-heaven-thumbnail.jpg",
-        "live_demo_link": "https://gadgetheaven.com",
-        "github_link": "https://github.com/username/gadget-heaven"
+        "image": "/images/project/visanavigator.png",
+        "live_link": "https://visa-navigator-by-mahmud.netlify.app/",
+        "client_git": "https://github.com/mahmuddevs/visa-navigator-client",
+        "server_git": "https://github.com/mahmuddevs/visa-navigator-server"
     },
     {
         "id": "3",
-        "name": "Gadget Heaven",
-        "description": "A dynamic e-commerce platform for gadgets with features like product search, filtering, and cart management.",
+        "name": "Pet Adoption",
+        "short_description": "Peddy is a pet adoption platform built with Tailwind CSS and Vanilla JavaScript. It showcases dynamic pet cards, popups with detailed information, and features like liking or adopting pets.",
+        "description": "Peddy is a user-friendly pet adoption website crafted using Tailwind CSS and Vanilla JavaScript. The platform dynamically displays pet cards with details such as images, names, and descriptions. It includes interactive popups with comprehensive information about each pet and functionalities like liking pets to mark favorites or adopting them via a simple modal. While the project showcases dynamic data handling and responsive design, it was a learning experience that revealed areas for improvement in terms of functionality and scalability.",
         "technologies": [
-            "React",
-            "Node.js",
-            "Express",
-            "MongoDB",
-            "Tailwind CSS"
+            "HTML",
+            "Tailwind CSS",
+            "JavaScript"
         ],
-        "image": "https://example.com/gadget-heaven-thumbnail.jpg",
-        "live_demo_link": "https://gadgetheaven.com",
-        "github_link": "https://github.com/username/gadget-heaven"
+        "image": "/images/project/petadopt.png",
+        "live_link": "https://peddy-adoption-by-mahmud.netlify.app/",
+        "client_git": "https://github.com/mahmuddevs/peddy-pet-adoption"
     }
 ]
