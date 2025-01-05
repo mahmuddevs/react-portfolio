@@ -21,12 +21,12 @@ const Banner = () => {
                     </span>
                 </h1>
                 <p className="text-base w-10/12 sm:w-full xl:w-9/12 mx-auto md:mx-0">I'm a Developer eager to create responsive and user-friendly websites, with a growing knowledge of backend technologies to build complete web solutions.</p>
-                <div className="flex justify-center md:justify-start gap-4 text-3xl">
+                <div className="flex justify-center md:justify-start gap-4 text-3xl mb-32">
                     <a href="https://www.facebook.com/mahmud.rashid.729768" className="border p-2 rounded-full hover:-translate-y-1 duration-300 transition-transform"><FaFacebookF /></a>
                     <a href="https://github.com/mahmuddevs" className="border p-2 rounded-full hover:-translate-y-1 duration-300 transition-transform"><FaGithub /></a>
                     <a href="https://www.linkedin.com/in/themahmudrashid/" className="border p-2 rounded-full hover:-translate-y-1 duration-300 transition-transform"><FaLinkedin /></a>
                 </div>
-                <button className="color-accent py-3 px-2 md:px-5 rounded-md flex mx-auto md:mx-0 hover:bg-[#9615db]/60">Download Resume</button>
+                <a href="/cv-prototype.pdf" download="cv-prototype.pdf" className="inline-block color-accent py-3 px-2 md:px-5 rounded-md mx-auto md:mx-0 hover:bg-[#9615db]/60">Download Resume</a>
             </div>
         </section>
     )

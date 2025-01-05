@@ -1,8 +1,8 @@
 import { FaExternalLinkAlt } from "react-icons/fa"
-import { Link } from "react-scroll"
+import { Link } from "react-router-dom"
 
 const ProjectCard = ({ data }) => {
-    const { id, name, short_description, drawbacks, technologies, image, live_link, client_git, server_git } = data
+    const { id, name, short_description, image, live_link } = data
     return (
         <div className="rounded-lg bg-[#2d3032] drop-shadow-md overflow-hidden flex flex-col h-full">
             <img src={image} alt={name} className="w-full h-48 object-cover" />

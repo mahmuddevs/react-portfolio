@@ -3,6 +3,7 @@ import { CiMenuFries } from "react-icons/ci"
 import { IoMdClose } from "react-icons/io"
 import { motion } from "motion/react"
 import { Link } from "react-scroll"
+import { Link as RouterLink } from "react-router-dom"
 
 const Header = () => {
     const [navOpen, setNavOpen] = useState(false)
@@ -87,7 +88,7 @@ const Header = () => {
                         transition={{ type: "spring", stiffness: 100, damping: 20 }}
                     >
                         {navItems}
-                        <button className="color-accent py-3 px-2 md:px-5 rounded-md hover:bg-[#9615db]/60">Download Resume</button>
+                        <a href="/cv-prototype.pdf" download="cv-prototype.pdf" className="color-accent py-3 px-2 md:px-5 rounded-md hover:bg-[#9615db]/60">Download Resume</a>
                     </motion.ul>
                     <div>
                         <CiMenuFries onClick={() => { setNavOpen(true) }} className="block lg:hidden cursor-pointer text-xl" />
